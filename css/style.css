@@ -175,6 +175,7 @@ ul{
 
 .banner .content{   
     margin: auto;
+    padding: 4rem;
     align-items: center;
 }
 
@@ -263,10 +264,9 @@ ul{
 
 .top-side .suggest .item{
     display: relative;
-    align-items: center;
+    height: 20rem;
     width: 12rem;
     min-height: 18rem;
-    margin: 1%;
     background: var(--text-color);
 }
 
