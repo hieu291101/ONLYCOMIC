@@ -1,752 +1,591 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Fonts Awesome Icons -->
-        <link rel="stylesheet" href="css/all.css">
-        
-        <!-- Custom style -->
-        <link rel="stylesheet" href="css/style.css">
-        
-        <title>ONLY COMIC</title>
-        <meta name="description" content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh">
-    </head>
-    <body>
-        <!-- --------------------Navigation------------------ -->
-        <nav class="nav flex-row">
-            <div class="nav-logo">
-                <a href="#" class="text-gray">ONLY COMIC</a>
-            </div>
-                
-            <div>
-                <ul class="nav-list">
-                    <li class="nav-link">
-                        <a href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Thể loại</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#xepLoai">Xếp loại</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Tương tác</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="nav-advanced">
-                <ul class="nav-inOut">
-                    <li class="nav-link"><a href="#" >Đăng nhập</a></li>
-                    <li class="nav-link"><a href="#" >Đăng ký</a></li>
-                </ul>
-            </div>
-        </nav>
-         <!-- ------x--------------Navigation--------x---------- -->
 
-         <!-- --------------------- Main site section----------------- -->
-         <section class="banner">
-            <div class="content flex-column">
-                <h2>chào mừng đến với ONLYCOMIC</h2>
-                <p>bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
-                <div class="btn">
-                    <span>
-                        <a href="#dangNhap" class="btn">Đăng nhập</a>
-                    </span>
-                    <span>
-                        <a href="#dangKy" class="btn">Đăng ký</a>
-                    </span>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Fonts Awesome Icons -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- grid style -->
+    <link rel="stylesheet" href="css/grid.css">
+
+    <!-- reponsive style -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+
+    <title>ONLY COMIC</title>
+    <meta name="description" content="truyen hay, kiem soat thoi gian doc truyen, doc truyen thong minh">
+</head>
+
+<body>
+    <!-- --------------------Navigation------------------ -->
+
+    <!--nav-bar-->
+    <nav class="nav">
+        <div class="grid wide">
+            <div class="nav-pc flex-row">
+                <div class="nav-logo">
+                    <a href="/" class="nav-logo__link">ONLY COMIC</a>
                 </div>
-                <h3>--hoặc--</h3>
-                <span>
-                    <a href="#docTruyen" class="btn">Đọc truyện ngay</a>
+
+                <!--nav-pc-->
+                <div class="nav-pc__main-bar">
+                    <ul class="nav-pc__list flex-row hide">
+                        <li class="nav-pc__item">
+                            <a href="#" class="nav-pc__link">Trang chủ</a>
+                        </li>
+                        <li class="nav-pc__item">
+                            <a href="#" class="nav-pc__link">Thể loại</a>
+                        </li>
+                        <li class="nav-pc__item">
+                            <a href="#xepLoai" class="nav-pc__link">Xếp loại</a>
+                        </li>
+                        <li class="nav-pc__item">
+                            <a href="#" class="nav-pc__link">Tương tác</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-pc__mode-btn">
+                    <div class="nav-pc__button">
+                        <input type="checkbox" id="switch" class="switch-input" />
+                        <label for="switch" class="switch"></label>
+                    </div>
+                </div>
+
+                <div class="nav-pc__advanced-bar">
+                    <ul class="nav-pc__list">
+                        <li class="nav-pc__item">
+                            <a href="#" class="nav-pc__link ">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- x-nav-pc-x -->
+
+            <!--nav-moblie-->
+            <div class="nav-mobile-tablet col l-0 m-2 c-2">
+                <label class="nav__bar-btn" for="nav-moblie-input">
+                    <i class="fas fa-bars fa-3x"></i>
+                </label>
+
+                <input type="checkbox" class="nav__input" id="nav-moblie-input" hidden />
+                <label class="nav__overlay" for="nav-moblie-input"></label>
+
+                <div class="nav__mobile">
+                    <label class="nav__mobile-close" for="nav-moblie-input">
+                        <i class="fas fa-suggest-bar__times fa-3x"></i>
+                    </label>
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-link">
+                            <a href="">
+                                <i class="fas fa-home"> Trang chủ</i>
+                            </a>
+                        </li>
+                        <li class="nav__mobile-link">
+                            <a href="">
+                                <i class="fas fa-filter"> Thể loại</i>
+                            </a>
+                        </li>
+                        <li class="nav__mobile-link">
+                            <a href="">
+                                <i class="fas fa-trophy"> Xếp loại</i>
+                            </a>
+                        </li>
+                        <li class="nav__mobile-link">
+                            <a href="">
+                                <i class="fas fa-exchange-alt"> Tương tác</i>
+                            </a>
+                        </li>
+                        <li class="nav__mobile-link">
+                            <a href="">
+                                <i class="fas fa-sign-in-alt"> Đăng nhập</i>
+                            </a>
+                        </li>
+                        <li class="nav__mobile-link">
+                            <a href="">
+                                <i class="fas fa-user-edit"> Đăng ký</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- x-nav-mobile-x -->
+
+        </div>
+    </nav>
+    <!-- ------x--------------Navigation--------x---------- -->
+
+    <!-- --------------------- Main site section----------------- -->
+    <section class="banner">
+        <div class="banner__content flex-column">
+            <h2>chào mừng đến với ONLYCOMIC</h2>
+            <p>bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
+            <div class="banner__btn-item">
+                <span class="banner__btn-link-wrap">
+                    <a href="#dangNhap" class="banner__btn-link">Đăng nhập</a>
                 </span>
-             </div>
-         </section>
-         <section class="main-page">
-            <div class="main-section flex-column">
-                <div class="heading">
-                    <h2>Đề cử</h2>
-                </div>
-                <div class="top-side">
-                    <div class="suggest flex-row">
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-
-
-                
-                <div class="heading-bottom">
-                    <h2>Truyện mới nhất</h2>
-                </div>
-                
-                <div class="bottom-side">
-                    <div class="clock"></div>
-                    <div class="select flex-row">
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item" default-item>
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/kiem-than-tuyet-the.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Kiếm thần tuyệt thế</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            
-                            <a href="#">
-                                <img src="./images/comic-item/bach-luyen-thanh-than.jpg" alt=""></>
-                            </a>
-                            <figcaption class="flex-column"> 
-                                <div class="subtitle">Bách luyện thành thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/nghich-thien-kiem-than.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Nghịch thiên kiếm thần</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="images/comic-item/than-ma-thien-sat.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Thần ma thiên sát</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure class="item default-item">
-                            <a href="#">
-                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                            </a>
-                            <figcaption class="flex-column">
-                                <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                <div class="chap">Chap 300</div>
-                                <div class="time">
-                                    <i class="fas fa-history"></i>
-                                    <span> 3 giờ trước</span>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        
-                    </div>
-                </div>
+                <span class="banner__btn-link-wrap">
+                    <a href="#dangKy" class="banner__btn-link">Đăng ký</a>
+                </span>
             </div>
-         </section>
-        <!-- --------Search---------- -->
+            <h3>--hoặc--</h3>
+            <span class="banner__btn-link-wrap">
+                <a href="#docTruyen" class="banner__btn-link--out">Đọc truyện ngay</a>
+            </span>
+        </div>
+    </section>
 
-
-        <!-- ---x----Search-----x---- -->
-        <section class="search flex-column">
-            <div class="search-bar flex-row">
-                <h2>Tìm kiếm</h2>
-                <input type="text" placeholder="tên truyện...." title="">
-                <button  type="submit"><i class="fas fa-search"></i></button>
+    <section class="main-page">
+        <div class="grid wide">
+            <div class="suggest-bar__headline row">
+                <h2>Đề cử</h2>
             </div>
-
-            <div class="searchByCatagory flex-row">
-                <div class="item">Bách Hợp</div>
-                <div class="item">Cổ Đại</div>
-                <div class="item">Dị Giới</div>
-                <div class="item">Dị Năng</div>
-                <div class="item">Điền Văn</div>
-                <div class="item">Đô Thị</div>
-                <div class="item">Đoản Văn</div>
-                <div class="item">Đông Phương</div>
-                <div class="item">Giang Hồ</div>
-                <div class="item">Hắc Bang</div>
-                <div class="item">Hài Hước</div>
-                <div class="item">Huyền Huyễn</div>
-                <div class="item">Khoa Huyễn</div>
-                <div class="item">Kiếm Hiệp</div>
-                <div class="item">Lịch Sử</div>
-                <div class="item">Light Novel</div>
-                <div class="item">Linh Dị</div>
-                <div class="item">Mạt Thế</div>
-                <div class="item">Nam cường</div>
-                <div class="item">Quân Nhân</div>  
-            </div>
-
-        </section>
-        <!-- --------Raking---------- -->
-        <section class="ranking" id="xepLoai">
-            
-            <div class="content">
-                <div class="heading">
-                    <h2>Lịch sử</h2>
-                </div>
-                <div class="history flex-row">
-                    <figure class="item default-item">
-                        <a href="#">
-                            <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                        </a>
-                        <figcaption class="flex-column">
-                            <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                            <div class="chap">Chap 300</div>
-                            <div class="time">
-                                <i class="fas fa-history"></i>
-                                <span> 3 giờ trước</span>
+            <div class="autoplay row">
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="top-most flex-row">
-                    <div class="most-view">
-                        <i class="fas fa-eye"></i>
-                        <div class="items">
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
                         </div>
-                    </div>
-
-
-                    <div class="most-love">
-                        <i class="fas fa-heart"></i>
-                        <div class="items">
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <figure class="item default-item">
-                                <a href="#">
-                                    <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
-                                </a>
-                                <figcaption class="flex-column">
-                                    <div class="subtitle">Trọng sinh đô thị tu tiên</div>
-                                    <div class="chap">Chap 300</div>
-                                    <div class="time">
-                                        <i class="fas fa-history"></i>
-                                        <span> 3 giờ trước</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
                         </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <a href="" class="suggest-bar__item-link">
+                        <div class="suggest-bar__item ">
+                            <div class="suggest-bar__item-background"
+                                style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+                            <div class="suggest-bar__item-description flex-column">
+                                <div class="suggest-bar__subtitle">Kiếm thần tuyệt thế</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--x- div row -x-->
+            </div>
+            <!-- x-suggest-bar-x -->
+
+            <div class="main-layout row">
+
+                <div class="latest__block col l-8 m-12 c-12">
+                    <div class="grid row">
+                        <div class="col l-3 m-4 c-6">
+                            <a href="" class="latest__item-link">
+                                <div class="latest__item ">
+                                    <div class="latest__item-background"
+                                        style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);"></div>
+
+                                    <div class="latest__item-description flex-column">
+                                        <div class="latest__item-ranking flex-row">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+
+                                        <div class="latest__subtitle flex-row">Kiếm thần tuyệt thế</div>
+                                        <div class="latest__chap-time flex-row">
+                                            <a href="#" class="latest__chap">Chap 300</a>
+                                            <div class="latest__time">
+                                                <i class="fas fa-history"></i>
+                                                <span> 3 giờ trước</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="latest__chap-time flex-row">
+                                            <a href="#" class="latest__chap">Chap 300</a>
+                                            <div class="latest__time">
+                                                <i class="fas fa-history"></i>
+                                                <span> 3 giờ trước</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="latest__chap-time flex-row">
+                                            <a href="#" class="latest__chap">Chap 300</a>
+                                            <div class="latest__time">
+                                                <i class=" fas fa-history"></i>
+                                                <span> 3 giờ trước</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <!-- close row -->
+                    </div>
+                    <!-- close latest block -->
+                </div>
+
+                <div class="clock__block col l-4 m-0 c-12"></div>
+
+                <!-- close main layout -->
+            </div>
+
+
+
+            <!--  close grid wide -->
+        </div>
+    </section>
+    <!-- --------Search---------- -->
+
+
+    <!-- ---x----Search-----x---- -->
+    <section class="search flex-column">
+        <div class="search-bar flex-row">
+            <h2>Tìm kiếm</h2>
+            <input type="text" placeholder="tên truyện...." title="">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="searchByCatagory flex-row">
+            <div class="item">Bách Hợp</div>
+            <div class="item">Cổ Đại</div>
+            <div class="item">Dị Giới</div>
+            <div class="item">Dị Năng</div>
+            <div class="item">Điền Văn</div>
+            <div class="item">Đô Thị</div>
+            <div class="item">Đoản Văn</div>
+            <div class="item">Đông Phương</div>
+            <div class="item">Giang Hồ</div>
+            <div class="item">Hắc Bang</div>
+            <div class="item">Hài Hước</div>
+            <div class="item">Huyền Huyễn</div>
+            <div class="item">Khoa Huyễn</div>
+            <div class="item">Kiếm Hiệp</div>
+            <div class="item">Lịch Sử</div>
+            <div class="item">Light Novel</div>
+            <div class="item">Linh Dị</div>
+            <div class="item">Mạt Thế</div>
+            <div class="item">Nam cường</div>
+            <div class="item">Quân Nhân</div>
+        </div>
+
+    </section>
+    <!-- --------Raking---------- -->
+    <section class="ranking" id="xepLoai">
+
+        <div class="content">
+            <div class="heading">
+                <h2>Lịch sử</h2>
+            </div>
+            <div class="history flex-row">
+                <figure class="item default-item">
+                    <a href="#">
+                        <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                    </a>
+                    <figcaption class="flex-column">
+                        <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                        <a href="#" class="suggest-bar__chap">Chap 300</a>
+                        <div class="suggest-bar__time">
+                            <i class="fas fa-history"></i>
+                            <span> 3 giờ trước</span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="top-most flex-row">
+                <div class="most-view">
+                    <i class="fas fa-eye"></i>
+                    <div class="items">
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+
+                <div class="most-love">
+                    <i class="fas fa-heart"></i>
+                    <div class="items">
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="item default-item">
+                            <a href="#">
+                                <img src="./images/comic-item/trong-sinh-do-thi-tu-tien.jpg" alt="">
+                            </a>
+                            <figcaption class="flex-column">
+                                <div class="suggest-bar__subtitle">Trọng sinh đô thị tu tiên</div>
+                                <a href="#" class="suggest-bar__chap">Chap 300</a>
+                                <div class="suggest-bar__time">
+                                    <i class="fas fa-history"></i>
+                                    <span> 3 giờ trước</span>
+                                </div>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- x-------Raking------x--- -->
-        
+    <!-- x-------Raking------x--- -->
 
-        <!------------- interract ------------>
 
-        <section class="interract">
-            <div class="feedback">
-                <
-            </div>
-        </section>
-        <!------------- interract ------------>
-        
-        <!-- ------------x-------- Main site section--------x-------- -->
-        
-        <footer>
-            <div>
-                copyright &copy; 
-            </div>
-        </footer>
-        <script src="./js/main.js"></script>
-    </body>
+    <!------------- interract ------------>
+
+    <section class="interract">
+        <div class="feedback">
+        </div>
+    </section>
+    <!------------- interract ------------>
+
+    <!-- ------------x-------- Main site section--------x-------- -->
+
+    <footer>
+        <div>
+            copyright &copy;
+        </div>
+    </footer>
+
+    <!-- Jquery script -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
