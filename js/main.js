@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+    // nav-mode__btn
+    $(".nav-pc__mode-btn i").click(function () {
+        $(".nav-pc__mode-btn i").show();
+        $(this).hide();
+        $("body").toggleClass("dark-scheme night");
+    });
+
+
+    // close nav-mode__btn
+
     // carousel
     $('.autoplay').slick({
         slidesToShow: 6,
@@ -43,6 +54,7 @@ $(document).ready(function () {
         $('.pagination').find('.pagination-item__page-number.active').prev().addClass('active');
         $('.pagination').find('.pagination-item__page-number.active').next().removeClass('active');
     })
+
     // close pagination
 
     //clock
@@ -74,7 +86,7 @@ $(document).ready(function () {
 
         if (h_d > 12) {
             h_d = h_d - 12;
-            let am = "PM";
+            am = "PM";
         }
 
         h_d = (h_d < 10) ? "0" + h_d : h_d;

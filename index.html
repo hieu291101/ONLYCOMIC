@@ -12,6 +12,7 @@
 
     <!-- Fonts Awesome Icons -->
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <!-- Custom style -->
     <link rel="stylesheet" href="css/style.css">
@@ -35,13 +36,13 @@
     <!--nav-bar-->
     <nav class="nav">
         <div class="grid wide">
-            <div class="nav-pc flex-row">
+            <div class="nav-container flex-row">
                 <div class="nav-logo">
-                    <a href="/" class="nav-logo__link">ONLY COMIC</a>
+                    <a href="#" class="nav-logo__link">ONLY COMIC</a>
                 </div>
 
                 <!--nav-pc-->
-                <div class="nav-pc__main-bar">
+                <div class="nav-pc__main-bar hide-on-mobile-tablet">
                     <ul class="nav-pc__list flex-row hide">
                         <li class="nav-pc__item">
                             <a href="#" class="nav-pc__link">Trang chủ</a>
@@ -59,93 +60,92 @@
                 </div>
 
                 <div class="nav-pc__mode-btn">
-                    <div class="nav-pc__button">
-                        <input type="checkbox" id="switch" class="switch-input" />
-                        <label for="switch" class="switch"></label>
+                    <i class="fas fa-sun nav-pc__button-icon"></i>
+                    <i class="fas fa-moon nav-pc__button-icon" style="display: none;"></i>
+                </div>
+
+                <div class="nav-pc__advanced-bar hide-on-mobile-tablet">
+                    <div class="nav-pc__item">
+                        <a href="#" class="nav-pc__link ">Đăng nhập</a>
                     </div>
                 </div>
+                <!-- x-nav-pc-x -->
 
-                <div class="nav-pc__advanced-bar">
-                    <ul class="nav-pc__list">
-                        <li class="nav-pc__item">
-                            <a href="#" class="nav-pc__link ">Đăng nhập</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                <!--nav-moblie-->
 
-            <!-- x-nav-pc-x -->
-
-            <!--nav-moblie-->
-            <div class="nav-mobile-tablet col l-0 m-2 c-2">
-                <label class="nav__bar-btn" for="nav-moblie-input">
+                <label class="nav-mobile__bar-btn" for="nav-moblie-input">
                     <i class="fas fa-bars fa-3x"></i>
                 </label>
 
-                <input type="checkbox" class="nav__input" id="nav-moblie-input" hidden />
-                <label class="nav__overlay" for="nav-moblie-input"></label>
+                <input type="checkbox" class="nav-mobile__input" id="nav-moblie-input" hidden />
+                <label class="nav-mobile__overlay" for="nav-moblie-input"></label>
 
-                <div class="nav__mobile">
-                    <label class="nav__mobile-close" for="nav-moblie-input">
-                        <i class="fas fa-suggest-bar__times fa-3x"></i>
+                <div class="nav-mobile__mobile">
+                    <label class="nav-mobile__mobile-close" for="nav-moblie-input">
+                        <i class="fas fa-times fa-3x"></i>
                     </label>
-                    <ul class="nav__mobile-list">
-                        <li class="nav__mobile-link">
+                    <ul class="nav-mobile__mobile-list">
+                        <li class="nav-mobile__mobile-link">
                             <a href="">
                                 <i class="fas fa-home"> Trang chủ</i>
                             </a>
                         </li>
-                        <li class="nav__mobile-link">
+                        <li class="nav-mobile__mobile-link">
                             <a href="">
                                 <i class="fas fa-filter"> Thể loại</i>
                             </a>
                         </li>
-                        <li class="nav__mobile-link">
+                        <li class="nav-mobile__mobile-link">
                             <a href="">
                                 <i class="fas fa-trophy"> Xếp loại</i>
                             </a>
                         </li>
-                        <li class="nav__mobile-link">
+                        <li class="nav-mobile__mobile-link">
                             <a href="">
                                 <i class="fas fa-exchange-alt"> Tương tác</i>
                             </a>
                         </li>
-                        <li class="nav__mobile-link">
+                        <li class="nav-mobile__mobile-link">
                             <a href="">
                                 <i class="fas fa-sign-in-alt"> Đăng nhập</i>
                             </a>
                         </li>
-                        <li class="nav__mobile-link">
+                        <li class="nav-mobile__mobile-link">
                             <a href="">
                                 <i class="fas fa-user-edit"> Đăng ký</i>
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <!-- x-nav-mobile-x -->
 
+                </div>
+                <!-- x-nav-mobile-x -->
+
+            </div>
+
+            <!-- close grid -->
         </div>
     </nav>
     <!-- ------x--------------Navigation--------x---------- -->
 
     <!-- --------------------- Main site section----------------- -->
     <section class="banner">
-        <div class="banner__content flex-column">
-            <h2>chào mừng đến với ONLYCOMIC</h2>
-            <p>bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
-            <div class="banner__btn-item">
+        <div class="banner-container">
+            <div class="banner__content flex-column">
+                <h2>chào mừng đến với ONLYCOMIC</h2>
+                <p>bạn hãy đăng nhập để có trải nhiệm tốt nhất</p>
+                <div class="banner__btn-item">
+                    <span class="banner__btn-link-wrap">
+                        <a href="#dangNhap" class="banner__btn-link">Đăng nhập</a>
+                    </span>
+                    <span class="banner__btn-link-wrap">
+                        <a href="#dangKy" class="banner__btn-link">Đăng ký</a>
+                    </span>
+                </div>
+                <h3>--hoặc--</h3>
                 <span class="banner__btn-link-wrap">
-                    <a href="#dangNhap" class="banner__btn-link">Đăng nhập</a>
-                </span>
-                <span class="banner__btn-link-wrap">
-                    <a href="#dangKy" class="banner__btn-link">Đăng ký</a>
+                    <a href="#docTruyen" class="banner__btn-link--out">Đọc truyện ngay</a>
                 </span>
             </div>
-            <h3>--hoặc--</h3>
-            <span class="banner__btn-link-wrap">
-                <a href="#docTruyen" class="banner__btn-link--out">Đọc truyện ngay</a>
-            </span>
         </div>
     </section>
 
@@ -2481,8 +2481,88 @@
     </section>
 
     <!-- --------Raking---------- -->
-    <section class="ranking" id="xepLoai">
+    <section class="ranking-layout" id="xepLoai">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col ranking-items flex-row">
+                    <div class="follow-item">
+                        <div class="follow-icon">
+                            <span>
+                                <a href="" class="follow-icon__link"><i class="fas fa-heart"></i></a>
+                            </span>
+                        </div>
 
+                        <a href="" class="box__item-link">
+                            <div class="box__item">
+                                <div class="box__item-background"
+                                    style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                                </div>
+                                <div class="box__item-description flex-column">
+                                    <div class="box__subtitle">Kiếm thần tuyệt thế</div>
+                                    <div class="box-number__content flex-column">
+                                        <span>Lượt thích:</span>
+                                        <span class="box-number"> 24000</span>
+                                        <a href="" class="box__btn" name="follow__link">Xem thêm</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="view-item">
+                        <div class="view-icon">
+                            <span>
+                                <a href="" class="view-icon__link"><i class="fas fa-eye"></i></a>
+                            </span>
+                        </div>
+
+                        <a href="" class="box__item-link">
+                            <div class="box__item">
+                                <div class="box__item-background"
+                                    style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                                </div>
+                                <div class="box__item-description flex-column">
+                                    <div class="box__subtitle">Kiếm thần tuyệt thế</div>
+                                    <div class="box-number__content flex-column">
+                                        <span>Lượt thích:</span>
+                                        <span class="box-number"> 24000</span>
+                                        <a href="" class="box__btn" name="view__link">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-icon">
+                            <span>
+                                <a href="" class="comment-icon__link"><i class="fas fa-comment-dots"></i></a>
+                            </span>
+                        </div>
+
+                        <a href="" class="box__item-link">
+                            <div class="box__item">
+                                <div class="box__item-background"
+                                    style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
+                                </div>
+                                <div class="box__item-description flex-column">
+                                    <div class="box__subtitle">Kiếm thần tuyệt thế</div>
+                                    <div class="box-number__content flex-column">
+                                        <span>Lượt thích:</span>
+                                        <span class="box-number"> 24000</span>
+                                        <a href="" class="box__btn" name="comment__link">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                    <!-- close col -->
+                </div>
+                <!-- close row -->
+            </div>
+            <!-- close grid -->
+        </div>
     </section>
 
     <!-- x-------Raking------x--- -->
