@@ -85,8 +85,8 @@ $(document).ready(function () {
         let am = "AM";
 
         if (h_d > 12) {
-            h_d = h_d - 12;
             am = "PM";
+            h_d = h_d - 12;
         }
 
         h_d = (h_d < 10) ? "0" + h_d : h_d;
