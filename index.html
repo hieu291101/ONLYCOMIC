@@ -31,6 +31,9 @@
 </head>
 
 <body>
+    <div class="go-to-top__btn" id="go-to-top__btn">
+        <a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
     <!-- --------------------Navigation------------------ -->
 
     <!--nav-bar-->
@@ -1932,16 +1935,16 @@
                         <div class="pagination-container">
                             <ul class="pagination">
                                 <li class="pagination-item">
-                                    <a href="#" class="pagination-item__link-prev">
+                                    <a href="javascript:;" class="pagination-item__link-prev">
                                         < Trước</a> </li> <li class="pagination-item__page-number active"><a
-                                                href="#">1</a>
+                                                href="javascript:;">1</a>
                                 </li>
-                                <li class="pagination-item__page-number"><a href="#">2</a></li>
-                                <li class="pagination-item__page-number"><a href="#">3</a></li>
-                                <li class="pagination-item__page-number"><a href="#">4</a></li>
-                                <li class="pagination-item__page-number"><a href="#">5</a></li>
+                                <li class="pagination-item__page-number"><a href="javascript:;">2</a></li>
+                                <li class="pagination-item__page-number"><a href="javascript:;">3</a></li>
+                                <li class="pagination-item__page-number"><a href="javascript:;">4</a></li>
+                                <li class="pagination-item__page-number"><a href="javascript:;">5</a></li>
                                 <li class="pagination-item">
-                                    <a href="#" class="pagination-item__link-next">Sau ></a>
+                                    <a href="javascript:;" class="pagination-item__link-next">Sau ></a>
                                 </li>
                             </ul>
                         </div>
@@ -1975,8 +1978,9 @@
                                 </div>
 
                                 <div class="feature__container l-12">
-                                    <input type="checkbox" class="feature-nofication__active"><span>Kiểm soát giờ đọc
-                                        truyện</span>
+                                    <input type="checkbox" class="feature-nofication__active" id="feature">
+                                    <label for="feature"><span>Kiểm soát giờ đọc
+                                            truyện</span></label>
                                     <div class="feature-nofication">
                                         <p>(Trang sẽ chuyển màu để thông báo thời gian)</p>
                                         <div class="feature-nofication__item">
@@ -1994,7 +1998,8 @@
                                 </div>
 
                                 <div class="fillter-catagory__container l-12">
-                                    <input type="checkbox" class="feature-nofication__active"><span>Lọc thể loại</span>
+                                    <input type="checkbox" class="fillter-catagory__active" id="fillter-catagory">
+                                    <label for="fillter-catagory"><span>Lọc thể loại</span></label>
                                     <div class="fillter-catagory">
                                         <p>(Hãy chọn thể loại bạn thích)</p>
                                         <ul class="fillter-catagory__list flex-row">
@@ -2132,11 +2137,11 @@
                     <div class="follow-item">
                         <div class="follow-icon">
                             <span>
-                                <a href="" class="follow-icon__link"><i class="fas fa-heart"></i></a>
+                                <a href="search.html" class="follow-icon__link"><i class="fas fa-heart"></i></a>
                             </span>
                         </div>
 
-                        <a href="" class="box__item-link">
+                        <a href="search.html" class="box__item-link">
                             <div class="box__item">
                                 <div class="box__item-background"
                                     style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
@@ -2146,7 +2151,7 @@
                                     <div class="box-number__content flex-column">
                                         <span>Lượt thích cao nhất:</span>
                                         <span class="box-number"> 24000</span>
-                                        <a href="" class="box__btn" name="follow__link">Xem thêm</a>
+                                        <a href="search.html" class="box__btn" name="follow__link">Xem thêm</a>
                                     </div>
                                 </div>
 
@@ -2157,11 +2162,11 @@
                     <div class="view-item">
                         <div class="view-icon">
                             <span>
-                                <a href="" class="view-icon__link"><i class="fas fa-eye"></i></a>
+                                <a href="search.html" class="view-icon__link"><i class="fas fa-eye"></i></a>
                             </span>
                         </div>
 
-                        <a href="" class="box__item-link">
+                        <a href="search.html" class="box__item-link">
                             <div class="box__item">
                                 <div class="box__item-background"
                                     style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">
@@ -2171,7 +2176,7 @@
                                     <div class="box-number__content flex-column">
                                         <span>Lượt xem cao nhất:</span>
                                         <span class="box-number"> 24000</span>
-                                        <a href="" class="box__btn" name="view__link">Xem thêm</a>
+                                        <a href="search.html" class="box__btn" name="view__link">Xem thêm</a>
                                     </div>
                                 </div>
                             </div>
@@ -2180,11 +2185,11 @@
                     <div class="comment-item">
                         <div class="comment-icon">
                             <span>
-                                <a href="" class="comment-icon__link"><i class="fas fa-comment-dots"></i></a>
+                                <a href="search.html" class="comment-icon__link"><i class="fas fa-comment-dots"></i></a>
                             </span>
                         </div>
 
-                        <a href="" class="box__item-link">
+                        <a href="search.html" class="box__item-link">
                             <div class="box__item">
                                 <div class="box__item-background"
                                     style="background-image:url(images/comic-item/kiem-than-tuyet-the.jpg);">

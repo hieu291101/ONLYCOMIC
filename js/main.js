@@ -107,4 +107,7 @@ $(document).ready(function () {
 window.addEventListener('scroll', function () {
     var nav = document.querySelector('nav');
     nav.classList.toggle('sticky', window.scrollY > 0);
+
+    var goTop = document.querySelector('#go-to-top__btn');
+    goTop.classList.toggle('sticky', window.scrollY > 0);
 });

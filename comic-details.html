@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/comic-details.css">
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive/comic-details-responsive.css">
-    <link rel="stylesheet" href="css/responsive/reponsive_search.css">
     <link rel="stylesheet" href="css/responsive/responsive.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,6 +26,9 @@
 </head>
 
 <body class=".night.light-scheme">
+    <div class="go-to-top__btn" id="go-to-top__btn">
+        <a href="#"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
     <!-- --------------------Navigation------------------ -->
 
     <!--nav-bar-->
@@ -124,7 +126,7 @@
     <!-- ------x--------------Navigation--------x---------- -->
 
     <!---------------------MAIN BODY SECTION------------------>
-    <div class="grid wide container">
+    <div class="grid wide container" id="container">
         <div class="row container__main">
             <!-- chapter details -->
             <div class="col l-8 m-12 c-12 container__center">
@@ -436,15 +438,16 @@
                     <div class="pagination-container">
                         <ul class="pagination">
                             <li class="pagination-item">
-                                <a href="#" class="pagination-item__link-prev">
-                                    < Trước</a> </li> <li class="pagination-item__page-number active"><a href="#">1</a>
+                                <a href="javascript:;" class="pagination-item__link-prev">
+                                    < Trước</a> </li> <li class="pagination-item__page-number active"><a
+                                            href="javascript:;">1</a>
                             </li>
-                            <li class="pagination-item__page-number"><a href="#">2</a></li>
-                            <li class="pagination-item__page-number"><a href="#">3</a></li>
-                            <li class="pagination-item__page-number"><a href="#">4</a></li>
-                            <li class="pagination-item__page-number"><a href="#">5</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">2</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">3</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">4</a></li>
+                            <li class="pagination-item__page-number"><a href="javascript:;">5</a></li>
                             <li class="pagination-item">
-                                <a href="#" class="pagination-item__link-next">Sau ></a>
+                                <a href="javascript:;" class="pagination-item__link-next">Sau ></a>
                             </li>
                         </ul>
                     </div>

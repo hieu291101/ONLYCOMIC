@@ -28,17 +28,23 @@ a {
   text-transform: capitalize;
 }
 
+span,
+i {
+  color: #333;
+}
+
 /* comic details */
 body {
   background: #f5f6fa;
 }
 
-.container {
+#container {
   margin: 130px auto 50px !important;
   padding: 30px 0;
   border-radius: 3px;
   background-color: var(--light-white-color);
   box-shadow: 0 0 10px #777;
+  font-size: 162.5%;
 }
 
 .container__main {

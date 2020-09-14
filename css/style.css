@@ -72,6 +72,31 @@ i.fas.fa-star {
 
 /*----------x-------------Global classes-------------x---------------*/
 
+/* go to top */
+
+.go-to-top__btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 0 0 1rem #1B9CFC;
+    opacity: 0;
+    transition: .2s;
+}
+
+.go-to-top__btn.sticky {
+    opacity: 1;
+}
+
+.go-to-top__btn i {
+    display: block;
+    color: #25CCF7;
+    font-size: 5rem;
+}
+
+/* close go to top */
 /* -----------------------Navbar----------------------------- */
 /*nav Pc*/
 .nav {
@@ -684,16 +709,17 @@ i.fas.fa-star {
 
 .feature__container>input[type="checkbox"] {
     margin: 2.4rem;
+    cursor: pointer;
 }
 
 .feature__container>input[type="checkbox"]:checked~.feature-nofication {
     display: block;
 }
 
-
 .feature__container span {
     font-size: 1.4rem;
     font-family: var(--Josefin);
+    cursor: pointer;
 }
 
 .feature-nofication {
@@ -743,6 +769,7 @@ i.fas.fa-star {
 
 .fillter-catagory__container>input[type="checkbox"] {
     margin: 2.4rem;
+    cursor: pointer;
 }
 
 .fillter-catagory__container>input[type="checkbox"]:checked~.fillter-catagory {
@@ -753,6 +780,7 @@ i.fas.fa-star {
 .fillter-catagory__container span {
     font-size: 1.4rem;
     font-family: var(--Josefin);
+    cursor: pointer;
 }
 
 .fillter-catagory {
