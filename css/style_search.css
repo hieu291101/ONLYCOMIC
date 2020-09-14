@@ -2,6 +2,10 @@ body {
     background-color: #f5f6fa;
 }
 
+.search-container {
+    padding-top: 2rem;
+}
+
 /* ---------- search-block-------------- */
 
 .search-block {

@@ -1,14 +1,15 @@
 $(document).ready(function () {
 
-    // nav-mode__btn
-    $(".nav-pc__mode-btn i").click(function () {
-        $(".nav-pc__mode-btn i").show();
-        $(this).hide();
-        $("body").toggleClass("dark-scheme night");
+    // nav-mode__btn  dark-mode
+    $(".nav-pc__button-icon").click(function () {
+        $(".banner").toggleClass("dark-mode");
+        $(".main-page, .clock__container, .feature__container,.latest__item-background, .suggest-bar__item-background, .fillter-catagory__container,.fas.fa-star").toggleClass("dark-mode");
+        $(".contact-layout").toggleClass("dark-mode");
+        $("#container,  .info-details__images, .comic-name-ranking__details-images").toggleClass("dark-mode");
     });
 
 
-    // close nav-mode__btn
+    // close nav-mode__btn dark-mode
 
     // carousel
     $('.autoplay').slick({

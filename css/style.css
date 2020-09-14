@@ -40,6 +40,9 @@ html {
 
 /*------------------------Global classes-----------------------------*/
 
+.dark-mode {
+    filter: invert(100%);
+}
 
 .flex-column {
     display: flex;
@@ -308,6 +311,7 @@ i.fas.fa-star {
     background-position: center;
 }
 
+
 .banner-container {
     width: 100%;
     display: flex;
@@ -439,7 +443,6 @@ i.fas.fa-star {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 3px;
-
 }
 
 .suggest-bar__item .suggest-bar__item-description {
@@ -498,6 +501,10 @@ i.fas.fa-star {
     border-radius: 3px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     margin: 12px 0;
+}
+
+.latest__item:hover {
+    transform: translateY(-2px);
 }
 
 .latest__item-ranking {
