@@ -25,11 +25,16 @@
 </head>
 
 <body>
-  <nav class="nav">
-    <div class="nav-logo">
-      <a href="/index.html" class="nav-logo__link">ONLY COMIC</a>
+  <div class="backround-carousel autoplay">
+    <div class="backround-carousel" style="background-image: url(/images/comic-item/onepiece.jpg) ;">
     </div>
-  </nav>
+    <div class="backround-carousel" style="background-image: url(/images/comic-item/naruto.jpg) ;">
+    </div>
+    <div class="backround-carousel" style="background-image: url(/images/comic-item/dragonball.jpg) ;">
+    </div>
+    <div class="backround-carousel" style="background-image: url(/images/comic-item/fairytail.jpg) ;">
+    </div>
+  </div>
   <div class="login-wrap">
     <div class="login-html">
       <input id="tab-1" type="radio" name="tab" class="sign-in" checked />
@@ -116,84 +121,13 @@
       </div>
     </div>
   </div>
-  <!--------------------------FOOTER------------------------>
-  <footer class="footer">
-    <div class="grid wide">
-      <div class="row contact-wrap">
-        <div class="about-us col l-6 m-12 c-12">
-          <h6 class="footer-tittle about-us-tittle">Về chúng tôi</h6>
-          <p class="about-us-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuit nam
-            totam quod, error nulla nisi obcaecati tenetur dolores? Doloremque
-            vero nam totam quod, error nulla nisi obcaecati tenetur dolores
-            nam totam quod, er eruor nulla nisi obcaecati tenetur dolores
-            recusandae quibusdam corporis!
-          </p>
-        </div>
 
-        <div class="category col l-3 m-6 c-12">
-          <h6 class="footer-tittle category-tittle">Danh mục</h6>
-          <ul class="footer-links">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="">Thể loại</a></li>
-            <li><a href="">Xếp hạng</a></li>
-            <li class="click__register">Đăng ký</li>
-            <li class="click__login">Đăng nhập</li>
-          </ul>
-        </div>
-
-        <div class="contact-us col l-3 m-6 c-12">
-          <h6 class="footer-tittle contact-us-tittle">Liên hệ</h6>
-          <ul class="footer-links">
-            <li><a href="">Góp ý - Báo lỗi</a></li>
-            <li><a href="">Chính sách bảo mật</a></li>
-            <li><a href="">Chính sách khiếu nại</a></li>
-            <li><a href="">Liên hệ quảng cáo</a></li>
-            <li><a href="">Tới cửa hàng chúng tôi</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="row copyright-wrap">
-        <div class="copyright col l-6 m-12 c-12">
-          <p class="copyright-text">
-            Copyright &copy; 2020 All Rights Reserved by
-            <a href="index.html">OnlyComic</a>.
-          </p>
-        </div>
-
-        <div class="social col l-6 m-12 c-12">
-          <ul class="social-icons">
-            <li>
-              <a class="facebook" href="#">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a class="youtube" href="#">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
-              <a class="instagram" href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a class="google-plus" href="#">
-                <i class="fab fa-google-plus"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!---------XX---------------FOOTER-------------XX-------->
+  <!-- Jquery script -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
+  <script src="js/login.js"></script>
 </body>
 
-<script src="js/login.js"></script>
 
 </html>

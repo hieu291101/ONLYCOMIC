@@ -16,15 +16,13 @@
   --red: #e63946;
 
   /* gradient color */
-  --young: linear-gradient(
-    to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-  );
+  --young: linear-gradient(to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%);
 
   /* theme font */
   --Abel: Abel, cursive;
@@ -68,42 +66,74 @@ span,
 i {
   color: var(--white);
 }
+
 table {
   border-collapse: collapse;
 }
 
+.nav {
+  position: relative !important;
+  background: #16a085;
+}
+
 /*----------x-------------Global classes-------------x---------------*/
+
+.nav-container a,
+.nav-pc__main-bar,
+.header__navbar-user-name,
+.header__navbar-item-link i,
+.nav-pc__mode-btn i {
+  color: white;
+}
+
+.header__navbar-user-item i,
+.header__navbar-user-item a {
+  color: #333;
+}
+
 .wide .l-12 {
   display: flex;
 }
+
 .main {
   min-height: 100vh;
   background-color: #f9f9f9;
 }
+
 .container {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #f9f9f9;
 }
+
 /*address bar*/
+
+.address-wrap {
+  padding: 2rem;
+}
+
 .address-bar.col {
   display: flex;
   margin-bottom: 30px;
   position: relative;
 }
+
 .address-link {
   color: #288ad6;
   font-size: 1.4rem;
   font-weight: 400;
   margin-left: 16px;
 }
+
 .address-link.first {
   margin-left: 0;
 }
+
 .address-link:hover {
   text-decoration: underline;
   color: purple;
 }
+
 .address-tittle:after {
   position: absolute;
   content: "\00BB";
@@ -117,25 +147,30 @@ table {
 .user-bar {
   margin-bottom: 20px;
 }
+
 .user-name-and-avatar {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
   display: flex;
   border-radius: 4px;
 }
+
 .user-avatar {
   height: 100%;
 }
-.user-avatar > img {
+
+.user-avatar>img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
+
 .user-tittle {
   padding: 20px 0 20px 20px;
   align-content: center;
   width: auto;
 }
+
 .user-tittle-text {
   color: #fff;
   opacity: 0.8;
@@ -143,6 +178,7 @@ table {
   font-size: 1.4rem;
   line-height: 2rem;
 }
+
 .user-tittle-name {
   color: #fff;
   font-weight: 400;
@@ -160,21 +196,25 @@ table {
   /* display: -webkit-box;
   line-clamp: 1; */
 }
+
 /*user list link item */
 .user-link-list {
   background-color: #f0f0f0;
   border-radius: 4px;
 }
+
 .user-link-item {
   display: block;
   font-size: 1.4rem;
   font-weight: 600;
   padding: 15px 30px;
 }
+
 .user-link-icon,
 .user-link-text {
   color: var(--text-color);
 }
+
 .user-link-text {
   margin-left: 2px;
 }
@@ -183,18 +223,21 @@ table {
 .info-area {
   position: relative;
 }
+
 .info-tittle {
   font-size: 3.5rem;
   line-height: 4rem;
   color: var(--text-color);
   margin-bottom: 36px;
 }
+
 .info-item {
   display: flex;
   justify-content: space-between;
   position: relative;
   width: 100%;
 }
+
 .info-item-tittle {
   color: var(--text-color);
   font-weight: 600;
@@ -205,6 +248,7 @@ table {
   margin: 0 0 24px;
   min-height: 27px;
 }
+
 .info-item-link {
   position: absolute;
   font-size: 13px;
@@ -213,14 +257,17 @@ table {
   right: 0;
   top: 10px;
 }
+
 .info-item-link:hover {
   color: #ee2c74;
 }
+
 .info-item-link::after {
   position: relative;
   content: "\00BB";
   margin-left: 10px;
 }
+
 /*info box*/
 .info-detail-box {
   border: 1px solid #d9d9d9;
@@ -229,16 +276,19 @@ table {
   width: 50%;
   margin-bottom: 24px;
 }
+
 .info-group {
   display: flex;
   justify-content: flex-start;
   font-size: 1.6rem;
   margin: 16px 0;
 }
+
 .info-label {
   font-weight: 600;
   width: 150px;
 }
+
 /*table*/
 .table {
   position: absolute;
@@ -248,10 +298,12 @@ table {
   width: 100%;
   max-width: 100%;
 }
+
 .table-header-list,
 .table-body-list {
   display: flex;
 }
+
 .table-header-item {
   width: 100%;
   background: #222;
@@ -266,16 +318,20 @@ table {
   white-space: nowrap;
   vertical-align: bottom;
 }
+
 .table-header-item:first-child {
   width: 30%;
 }
+
 .table-header-item:nth-child(2) {
   width: 20%;
 }
+
 .table-header-item:last-child {
   border-right: none;
   width: 50%;
 }
+
 .table-body-item {
   padding: 0.75rem;
   width: 100%;
@@ -288,26 +344,32 @@ table {
   white-space: nowrap;
   vertical-align: bottom;
 }
+
 .table-body-item:first-child {
   border-left: 1px solid rgba(34, 34, 34, 0.3);
   width: 30%;
 }
+
 .table-body-item:nth-child(2) {
   width: 20%;
   text-align: center;
 }
+
 .table-body-item:last-child {
   width: 50%;
 }
+
 /*-------------------Responsive----------------------*/
 /*--------------Mobile and Tablet-----------*/
 @media (max-width: 1023px) {
   .hide-on-mobile-tablet {
     display: none;
   }
+
   .address-bar.col.l-12.m-12.c-12 {
     display: flex;
   }
+
   .wide .l-12 {
     display: flex;
   }
@@ -318,23 +380,28 @@ table {
   .hide-on-tablet {
     display: none;
   }
+
   /*left*/
-  .user-avatar > img {
+  .user-avatar>img {
     width: 50px;
     height: 50px;
     margin-top: 16px;
   }
+
   .user-tittle {
     padding: 20px 0 20px 10px;
   }
+
   .user-link-item {
     padding-right: 20px;
   }
+
   /*right*/
   .info-detail-box {
     padding: 10px 36px 10px 28px;
     width: 100%;
   }
+
   .table-header-item:first-child,
   .table-body-item:first-child {
     width: 30%;
@@ -343,10 +410,12 @@ table {
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+
   .table-header-item:nth-child(2),
   .table-body-item:nth-child(2) {
     width: 20%;
   }
+
   .table-header-item:last-child,
   .table-body-item:last-child {
     width: 50%;
@@ -362,9 +431,11 @@ table {
   .hide-on-mobile {
     display: none;
   }
+
   .address-bar.col.l-12.m-12.c-12 {
     margin-bottom: 10px;
   }
+
   /*user*/
   .user-tittle-name {
     /*Ẩn chữ thành dấu 3 chấm*/
@@ -375,18 +446,22 @@ table {
     /* display: -webkit-box;
         line-clamp: 1; */
   }
+
   /*info*/
   .info-detail-box {
     padding: 10px 0 10px 28px;
     width: 100%;
   }
+
   .info-label {
     width: 110px;
   }
+
   .info-tittle {
     margin-left: 24px;
     margin-top: 36px;
   }
+
   .table {
     display: none;
   }
@@ -397,8 +472,10 @@ table {
   .wide .l-12 {
     display: block;
   }
+
   .address-bar.col.l-12.m-12.c-12 {
     display: flex;
   }
 }
+
 /*------XXX----------Responsive-----------XXX--------*/

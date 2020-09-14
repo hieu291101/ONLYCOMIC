@@ -30,36 +30,20 @@ input {
   outline: none;
 }
 
-
-/* nav */
-
-.nav {
-  position: relative !important;
-  margin: 0;
-  width: 100%;
-  padding: 2rem 0;
-  z-index: 1;
-  transition: 0.5s;
-  background: #16a085;
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.backround-carousel {
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  overflow: hidden;
 }
 
-.nav-logo__link {
-  color: white;
-  letter-spacing: 1rem !important;
-  font-size: 3rem !important;
-  font-weight: 700;
-  font-family: var(--Lexend);
-  transition: 0.5s;
-}
+
+
 
 /* close nav */
 /*form*/
 .login-wrap {
-  position: relative;
+  position: fixed;
   width: 100%;
   top: 20px;
   left: 50%;
