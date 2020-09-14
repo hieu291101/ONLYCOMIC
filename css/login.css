@@ -33,7 +33,9 @@ input {
 .backround-carousel {
   width: 100vw;
   height: 100vh;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -43,15 +45,15 @@ input {
 .login-wrap {
   position: fixed;
   width: 100%;
-  top: 20px;
+  top: 50%;
   left: 50%;
   margin-bottom: 4rem;
-  max-width: 500px;
-  min-height: 630px;
+  max-width: 523px;
+  min-height: 661px;
   background: url() no-repeat center;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .login-html {
@@ -271,9 +273,9 @@ input {
 }
 
 .foot-policy-text {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
   font-family: arial;
-  line-height: 1rem;
   text-align: center;
   padding: 0 12px;
 }
@@ -388,20 +390,21 @@ input {
 /*hide/show password*/
 .login-icon {
   position: absolute;
-  top: 7.15rem;
+  top: 11.15rem;
   right: 2rem;
-  font-size: 1rem;
+  font-size: 2rem;
   color: rgba(161, 161, 161, 0.4);
   cursor: pointer;
 }
 
 .sign-up-icon {
   position: absolute;
-  top: 12.15rem;
+  top: 11.15rem;
   right: 2rem;
-  font-size: 1rem;
+  font-size: 2rem;
   color: rgba(161, 161, 161, 0.4);
   cursor: pointer;
+}
 }
 
 .group i:hover {
