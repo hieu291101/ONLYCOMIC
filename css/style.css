@@ -1052,9 +1052,160 @@ i {
 }
 
 /* ---------------- */
-.
 /* ---------interract--------- */
 
 
 /* ----x----interract---x----- */
 /* ------------x-------- Main site section--------x--------*/
+
+
+/* ----------------------CSS FOOTER------------------------ */
+.footer {
+    background-color: #26272b;
+    padding: 25px 0 0;
+    font-size: 1.6rem;
+    font-style: var(--Anton);
+    line-height: 2rem;
+    color: #fff;
+}
+
+.footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+
+footer a {
+    color: #737373;
+}
+
+footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+footer li {
+    color: #737373;
+}
+
+footer li:hover {
+    cursor: pointer;
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-tittle {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    margin: 30px 0 15px;
+    letter-spacing: 4px;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: block;
+}
+
+.footer-links li:active,
+.footer-links li:focus,
+.footer-links li:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+}
+
+.contact-wrap {
+    margin-bottom: 2rem;
+}
+
+.about-us-text {
+    color: #737373;
+}
+
+.about-us-tittle {
+    text-align: center;
+}
+
+.fab {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.copyright-wrap {
+    padding: 20px 0 20px;
+}
+
+.copyright-text {
+    margin: 0;
+    color: #737373;
+}
+
+.social-icons {
+    padding-left: 51%;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.social-icons a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #737373;
+    background-color: #847e7e;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #1877f2;
+}
+
+.social-icons a.youtube:hover {
+    background-color: #ff0000;
+}
+
+.social-icons a.instagram:hover {
+    background: linear-gradient(45deg,
+            #5851db,
+            #833ab4,
+            #c13584,
+            #e1306c,
+            #fd1d1d);
+}
+
+.social-icons a.google-plus:hover {
+    background-color: rgba(208, 68, 55, 1);
+}
+
+/*--------XXX----------footer-------------XXX--------*/

@@ -1,6 +1,6 @@
 :root {
   --body-color: #ebebeb;
-  --text-color: #777676;
+  --text-color: #333;
   --blue-color: #00e;
   --white-color: #fff;
   --light-white-color: #f9f9f9;
@@ -16,12 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  background-color: var(--body-color);
+  color: var(--text-color);
 }
 
 ul {
@@ -34,10 +29,16 @@ a {
 }
 
 /* comic details */
+body {
+  background: #f5f6fa;
+}
+
 .container {
   margin: 130px auto 50px !important;
   padding: 30px 0;
+  border-radius: 3px;
   background-color: var(--light-white-color);
+  box-shadow: 0 0 10px #777;
 }
 
 .container__main {
@@ -50,7 +51,7 @@ a {
   padding: 10px 0;
 }
 
-.info-details__header h2 {
+q .info-details__header h2 {
   padding: 0 0 10px;
 }
 
@@ -73,8 +74,9 @@ a {
   color: var(--text-color);
 }
 
-.info-details__chapter-status li > p > i {
+.info-details__chapter-status li>p>i {
   min-width: 30px;
+  color: var(--text-color);
 }
 
 .info-details__chapter a {
@@ -139,11 +141,11 @@ a {
   background-color: var(--light-blue-color);
 }
 
-.details-content h3 > i {
+.details-content h3>i {
   margin-right: 10px;
 }
 
-.details-content h3 + p {
+.details-content h3+p {
   padding: 10px 0;
 }
 
@@ -217,6 +219,7 @@ a {
 .see-more:hover a {
   color: var(--light-pink-color);
 }
+
 /* comments chapter */
 .comments-chapter {
   padding: 20px 0 0;
@@ -232,6 +235,10 @@ a {
 
 .like-share--status a {
   display: inline-block;
+}
+
+.like-share--status span {
+  color: var(--text-color);
 }
 
 .like-share--status a:first-child {
@@ -261,11 +268,11 @@ a {
   padding: 15px 0 10px;
 }
 
-.like-page > p a {
+.like-page>p a {
   display: inline-block;
 }
 
-.like-page > p a:not(:first-child) {
+.like-page>p a:not(:first-child) {
   padding: 10px;
   margin-right: 10px;
   border-radius: 10px;
@@ -276,7 +283,7 @@ a {
   transition: background-color 0.3s;
 }
 
-.like-page > p a:not(:first-child):hover {
+.like-page>p a:not(:first-child):hover {
   background-color: var(--purple-color);
 }
 
@@ -379,49 +386,6 @@ a {
   padding: 15px 0 0;
 }
 
-/* pagination */
-.pagination {
-  padding: 10px 0;
-}
-
-.pagination-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.pagination-menu__items {
-  padding: 5px;
-}
-
-.pagination a.active {
-  color: var(--white-color);
-  background: var(--light-blue-color);
-}
-
-.pagination-menu__items > a {
-  display: block;
-
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-
-  text-align: center;
-
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-
-  color: var(--text-color);
-  background: var(--gray-color);
-
-  transition: all ease 0.3s;
-}
-
-.pagination-menu__items > a:hover:not(.active) {
-  color: var(--white-color);
-  background: var(--light-blue-color);
-}
 
 /* ranking */
 .ranking-comic {
@@ -469,7 +433,7 @@ a {
   display: flex;
 }
 
-.comic-name-ranking__details > span {
+.comic-name-ranking__details>span {
   line-height: 60px;
   color: var(--light-blue-color);
   font-size: 20px;
@@ -497,11 +461,11 @@ a {
   padding: 5px 10px;
 }
 
-.comic-name-ranking__details-content p > a {
+.comic-name-ranking__details-content p>a {
   color: #000;
 }
 
-.comic-name-ranking__details-content p > a:hover {
+.comic-name-ranking__details-content p>a:hover {
   color: var(--blue-color);
 }
 

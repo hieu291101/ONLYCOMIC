@@ -12,6 +12,49 @@
         justify-content: space-around;
         margin-bottom: 4rem;
     }
+
+    /*footer*/
+    .copyright-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .social-icons {
+        padding: 0;
+        text-align: center;
+    }
+
+    .copyright-text {
+        text-align: center;
+    }
+
+    .about-us-text {
+        text-align: justify;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+
+    .social-icons a.facebook {
+        background-color: #1877f2;
+    }
+
+    .social-icons a.youtube {
+        background-color: #ff0000;
+    }
+
+    .social-icons a.instagram {
+        background: linear-gradient(45deg,
+                #5851db,
+                #833ab4,
+                #c13584,
+                #e1306c,
+                #fd1d1d);
+    }
+
+    .social-icons a.google-plus {
+        background-color: rgba(208, 68, 55, 1);
+    }
 }
 
 /* Tablet */
@@ -21,13 +64,23 @@
     }
 
     .nav-pc__mode-btn {
-        margin-left: 30rem;
+        margin-left: 20rem;
     }
 
     .banner__content .active-with-mobile {
         display: block;
         font-size: 20rem;
         color: #2c3e50;
+    }
+
+    /*footer*/
+    .footer-tittle {
+        font-size: 1.6rem;
+    }
+
+    .contact-us,
+    .category {
+        text-align: center;
     }
 }
 
@@ -39,6 +92,7 @@
 
     .nav-container {
         justify-content: space-around;
+        align-items: center;
     }
 
     .banner__content .active-with-mobile {
@@ -57,6 +111,62 @@
         width: 20rem;
     }
 
+    .pagination {
+        padding: .1rem 1rem;
+    }
+
+    .pagination a {
+        display: block;
+        font-family: var(--Lexend);
+        border-radius: 50%;
+        color: #777;
+        background: transparent;
+        transition: .2s;
+    }
 
 
+    .pagination-item__link-prev {
+        line-height: 3rem;
+        font-size: 1.2rem;
+        margin-right: 0;
+    }
+
+    .pagination-item__page-number {
+        --size: 2rem;
+        width: var(--size);
+        height: var(--size);
+        line-height: var(--size);
+        margin: 0 .4rem;
+        font-size: 1.2rem;
+    }
+
+    .pagination-item__link-next {
+        line-height: 3rem;
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    /*footer*/
+    .footer-tittle {
+        font-size: 1.4rem;
+    }
+
+    footer .copyright-text,
+    footer .social-icons {
+        text-align: center;
+    }
+
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+
+    .contact-wrap {
+        text-align: center;
+    }
+
+    .about-us-text {
+        padding: 0 30px;
+    }
 }
