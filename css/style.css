@@ -76,7 +76,7 @@ i.fas.fa-star {
 
 .go-to-top__btn {
     position: fixed;
-    bottom: 8rem;
+    bottom: 10rem;
     right: 3rem;
     z-index: 2;
     border-radius: 50%;
