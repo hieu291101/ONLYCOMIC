@@ -65,6 +65,10 @@ i {
     color: var(--white);
 }
 
+i.fas.fa-star {
+    color: #FFC312;
+}
+
 
 /*----------x-------------Global classes-------------x---------------*/
 
@@ -1053,7 +1057,68 @@ i {
 
 /* ---------------- */
 /* ---------interract--------- */
+.contact-layout {
+    width: 100%;
+    padding: 4rem 0;
+    background: #f5f6fa;
+}
 
+.contact-layout h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2.4rem;
+    font-family: var(--Anton);
+    letter-spacing: .2rem;
+}
+
+.contact-form {
+    max-width: 60rem;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.contact-form__text {
+    display: block;
+    width: 100%;
+    padding: 2rem 2rem;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    background: #f5f6fa;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-bottom: 3px solid #10ac84;
+    box-shadow: 0 0 .5rem #999;
+}
+
+.contact-form__text:focus {
+    box-shadow: 0 0 1rem #1dd1a1;
+    background: #1dd1a1;
+}
+
+textarea.contact-form__text {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form__btn {
+    float: right;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: .3rem;
+    background: #ff9f43;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+.contact-form__btn:hover {
+    background: #ffa502;
+}
 
 /* ----x----interract---x----- */
 /* ------------x-------- Main site section--------x--------*/
