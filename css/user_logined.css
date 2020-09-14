@@ -191,6 +191,7 @@ ul {
 
 .header__navbar-user-icon {
   margin-right: 4px;
+  color: var(--text-color);
 }
 
 .header__navbar-user-item--separate {
